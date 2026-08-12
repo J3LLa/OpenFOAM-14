@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "OpenFOAM: Prepare cavity example",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ${workspaceFolder}\\.vscode\\run-openfoam-example.ps1 -Case tutorials/legacy/incompressible/icoFoam/cavity -Output runs/cavity -NoRun"
+        },
+        {
+            "name": "OpenFOAM: Run cavity example",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ${workspaceFolder}\\.vscode\\run-openfoam-example.ps1 -Case tutorials/legacy/incompressible/icoFoam/cavity -Output runs/cavity"
+        }
+    ]
+}
